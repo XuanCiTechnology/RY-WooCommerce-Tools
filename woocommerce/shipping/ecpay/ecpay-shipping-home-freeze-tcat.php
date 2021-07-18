@@ -1,14 +1,14 @@
 <?php
-class RY_ECPay_Shipping_Home_Cold_Tcat extends RY_ECPay_Shipping_Base
+class RY_ECPay_Shipping_Home_Freeze_Tcat extends RY_ECPay_Shipping_Base
 {
     public static $LogisticsType = 'Home';
     public static $LogisticsSubType = 'TCAT';
 
     public function __construct($instance_id = 0)
     {
-        $this->id = 'ry_ecpay_shipping_home_cold_tcat';
+        $this->id = 'ry_ecpay_shipping_home_freeze_tcat';
         $this->instance_id = absint($instance_id);
-        $this->method_title = __('ECPay shipping home Tcat Cold', 'ry-woocommerce-tools');
+        $this->method_title = __('ECPay shipping home Tcat Freeze', 'ry-woocommerce-tools');
         $this->method_description = '';
         $this->supports = [
             'shipping-zones',
